@@ -81,6 +81,24 @@ st.markdown("""
         background-color: rgba(255,255,255,0.05);
         border-radius: 8px;
     }
+    .stSelectbox > div > div {
+        background-color: rgba(255,255,255,0.1);
+        color: white !important;
+    }
+    .stSelectbox [data-baseweb="select"] {
+        background-color: rgba(255,255,255,0.1);
+    }
+    .stSelectbox [data-baseweb="select"] > div {
+        color: white !important;
+        background-color: rgba(255,255,255,0.1);
+    }
+    input, select, option {
+        color: white !important;
+        background-color: rgba(30, 30, 46, 0.9) !important;
+    }
+    [data-baseweb="select"] span {
+        color: white !important;
+    }
     </style>
 """, unsafe_allow_html=True)
 
@@ -324,9 +342,17 @@ def main():
         fig.update_layout(
             paper_bgcolor='rgba(0,0,0,0)',
             plot_bgcolor='rgba(0,0,0,0)',
-            font=dict(color='white'),
+            font=dict(color='white', size=14),
             showlegend=True,
-            legend=dict(orientation="v", yanchor="middle", y=0.5, xanchor="left", x=0),
+            legend=dict(
+                orientation="v", 
+                yanchor="middle", 
+                y=0.5, 
+                xanchor="left", 
+                x=0,
+                font=dict(color='white', size=13),
+                bgcolor='rgba(0,0,0,0)'
+            ),
             margin=dict(l=0, r=0, t=0, b=0),
             height=300
         )
