@@ -90,26 +90,47 @@ st.markdown("""
     .stSelectbox [data-baseweb="select"] {
         background-color: rgba(255,255,255,0.1);
     }
+    .stSelectbox > div > div {
+        background-color: rgba(45, 45, 68, 0.8) !important;
+        color: white !important;
+        border: 1px solid rgba(255,255,255,0.2) !important;
+    }
+    .stSelectbox [data-baseweb="select"] {
+        background-color: rgba(45, 45, 68, 0.8) !important;
+    }
     .stSelectbox [data-baseweb="select"] > div {
-        color: #1e1e2e !important;
-        background-color: rgba(255,255,255,0.95) !important;
+        color: white !important;
+        background-color: rgba(45, 45, 68, 0.8) !important;
+        border: 1px solid rgba(255,255,255,0.2) !important;
+    }
+    .stSelectbox [data-baseweb="select"] div[role="button"] {
+        background-color: rgba(45, 45, 68, 0.8) !important;
+        color: white !important;
     }
     input, select, option {
-        color: #1e1e2e !important;
-        background-color: rgba(255, 255, 255, 0.95) !important;
+        color: white !important;
+        background-color: rgba(45, 45, 68, 0.9) !important;
     }
     [data-baseweb="select"] span {
         color: white !important;
     }
+    [data-baseweb="popover"] {
+        background-color: rgba(45, 45, 68, 0.95) !important;
+    }
     [role="listbox"] {
-        background-color: rgba(255, 255, 255, 0.95) !important;
+        background-color: rgba(45, 45, 68, 0.95) !important;
+        border: 1px solid rgba(255,255,255,0.2) !important;
     }
     [role="option"] {
-        color: #1e1e2e !important;
-        background-color: rgba(255, 255, 255, 0.95) !important;
+        color: white !important;
+        background-color: rgba(45, 45, 68, 0.95) !important;
     }
     [role="option"]:hover {
-        background-color: rgba(102, 126, 234, 0.2) !important;
+        background-color: rgba(102, 126, 234, 0.6) !important;
+        color: white !important;
+    }
+    ul[role="listbox"] {
+        background-color: rgba(45, 45, 68, 0.98) !important;
     }
     </style>
 """, unsafe_allow_html=True)
