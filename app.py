@@ -111,34 +111,47 @@ st.markdown("""
     
     /* Dropdown menu container */
     div[data-baseweb="popover"] {
-        background-color: rgba(30, 30, 46, 0.98) !important;
+        background-color: white !important;
     }
     
     div[data-baseweb="popover"] > div {
-        background-color: rgba(30, 30, 46, 0.98) !important;
-        border: 1px solid rgba(255,255,255,0.2) !important;
+        background-color: white !important;
+        border: 1px solid rgba(0,0,0,0.1) !important;
     }
     
     /* Dropdown list */
     ul[role="listbox"] {
-        background-color: rgba(30, 30, 46, 0.98) !important;
-        border: 1px solid rgba(255,255,255,0.2) !important;
+        background-color: white !important;
+        border: 1px solid rgba(0,0,0,0.1) !important;
     }
     
     /* Dropdown options */
     li[role="option"] {
-        color: white !important;
-        background-color: rgba(30, 30, 46, 0.98) !important;
+        color: #1e1e2e !important;
+        background-color: white !important;
     }
     
     li[role="option"]:hover {
-        background-color: rgba(102, 126, 234, 0.6) !important;
+        background-color: rgba(102, 126, 234, 0.8) !important;
         color: white !important;
     }
     
     /* Selected option */
     li[role="option"][aria-selected="true"] {
-        background-color: rgba(102, 126, 234, 0.4) !important;
+        background-color: rgba(102, 126, 234, 0.6) !important;
+        color: white !important;
+    }
+    
+    /* Dropdown option text */
+    li[role="option"] span {
+        color: #1e1e2e !important;
+    }
+    
+    li[role="option"]:hover span {
+        color: white !important;
+    }
+    
+    li[role="option"][aria-selected="true"] span {
         color: white !important;
     }
     
@@ -160,6 +173,19 @@ st.markdown("""
     
     /* Force all text in selectbox to be white */
     .stSelectbox * {
+        color: white !important;
+    }
+    
+    /* But dropdown options should be dark */
+    ul[role="listbox"] * {
+        color: #1e1e2e !important;
+    }
+    
+    li[role="option"]:hover * {
+        color: white !important;
+    }
+    
+    li[role="option"][aria-selected="true"] * {
         color: white !important;
     }
     
