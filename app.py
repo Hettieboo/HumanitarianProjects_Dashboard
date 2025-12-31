@@ -90,23 +90,47 @@ st.markdown("""
     .stSelectbox [data-baseweb="select"] {
         background-color: rgba(255,255,255,0.1);
     }
+    /* Selectbox styling - force dark theme */
     .stSelectbox > div > div {
-        background-color: rgba(45, 45, 68, 0.8) !important;
+        background-color: rgba(45, 45, 68, 0.9) !important;
         color: white !important;
         border: 1px solid rgba(255,255,255,0.2) !important;
     }
     .stSelectbox [data-baseweb="select"] {
-        background-color: rgba(45, 45, 68, 0.8) !important;
+        background-color: rgba(45, 45, 68, 0.9) !important;
     }
     .stSelectbox [data-baseweb="select"] > div {
         color: white !important;
-        background-color: rgba(45, 45, 68, 0.8) !important;
+        background-color: rgba(45, 45, 68, 0.9) !important;
         border: 1px solid rgba(255,255,255,0.2) !important;
     }
     .stSelectbox [data-baseweb="select"] div[role="button"] {
-        background-color: rgba(45, 45, 68, 0.8) !important;
+        background-color: rgba(45, 45, 68, 0.9) !important;
         color: white !important;
     }
+    .stSelectbox [data-baseweb="select"] div {
+        background-color: rgba(45, 45, 68, 0.9) !important;
+        color: white !important;
+    }
+    /* Dropdown menu */
+    div[data-baseweb="popover"] {
+        background-color: rgba(30, 30, 46, 0.98) !important;
+    }
+    div[data-baseweb="popover"] > div {
+        background-color: rgba(30, 30, 46, 0.98) !important;
+    }
+    ul[role="listbox"] {
+        background-color: rgba(30, 30, 46, 0.98) !important;
+    }
+    li[role="option"] {
+        color: white !important;
+        background-color: rgba(30, 30, 46, 0.98) !important;
+    }
+    li[role="option"]:hover {
+        background-color: rgba(102, 126, 234, 0.6) !important;
+        color: white !important;
+    }
+    /* Input and select elements */
     input, select, option {
         color: white !important;
         background-color: rgba(45, 45, 68, 0.9) !important;
@@ -114,23 +138,17 @@ st.markdown("""
     [data-baseweb="select"] span {
         color: white !important;
     }
-    [data-baseweb="popover"] {
-        background-color: rgba(45, 45, 68, 0.95) !important;
-    }
     [role="listbox"] {
-        background-color: rgba(45, 45, 68, 0.95) !important;
+        background-color: rgba(30, 30, 46, 0.98) !important;
         border: 1px solid rgba(255,255,255,0.2) !important;
     }
     [role="option"] {
         color: white !important;
-        background-color: rgba(45, 45, 68, 0.95) !important;
+        background-color: rgba(30, 30, 46, 0.98) !important;
     }
     [role="option"]:hover {
         background-color: rgba(102, 126, 234, 0.6) !important;
         color: white !important;
-    }
-    ul[role="listbox"] {
-        background-color: rgba(45, 45, 68, 0.98) !important;
     }
     </style>
 """, unsafe_allow_html=True)
